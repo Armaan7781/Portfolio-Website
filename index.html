@@ -1,0 +1,439 @@
+<!DOCTYPE html>
+<html lang="en" class="scroll-smooth">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Arman Mulla | Business Analyst Portfolio</title>
+    <meta name="description" content="Portfolio of Arman Mulla, Business Analyst specializing in Data Analytics, KPI Tracking, and Process Improvement.">
+    
+    <link href="https://fonts.googleapis.com/css2?family=Outfit:wght@300;400;600;800&family=Plus+Jakarta+Sans:wght@400;500;700&display=swap" rel="stylesheet">
+    
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+    
+    <link href="https://unpkg.com/aos@2.3.1/dist/aos.css" rel="stylesheet">
+    
+    <link rel="stylesheet" href="style.css">
+
+    <script src="https://cdn.tailwindcss.com"></script>
+    <script>
+        tailwind.config = {
+            darkMode: 'class',
+            theme: {
+                extend: {
+                    fontFamily: {
+                        sans: ['Plus Jakarta Sans', 'sans-serif'],
+                        heading: ['Outfit', 'sans-serif'],
+                    },
+                    colors: {
+                        dark: '#0B0F19',
+                        darker: '#05080f',
+                        primary: '#6366f1',
+                        secondary: '#a855f7',
+                        accent: '#ec4899'
+                    }
+                }
+            }
+        }
+    </script>
+</head>
+<body class="bg-dark text-slate-300 font-sans antialiased overflow-x-hidden selection:bg-primary selection:text-white relative">
+
+    <div class="fixed top-[-10%] left-[-10%] w-96 h-96 bg-primary/20 rounded-full mix-blend-screen filter blur-[100px] animate-blob z-0 pointer-events-none"></div>
+    <div class="fixed top-[20%] right-[-10%] w-96 h-96 bg-secondary/20 rounded-full mix-blend-screen filter blur-[100px] animate-blob animation-delay-2000 z-0 pointer-events-none"></div>
+    <div class="fixed bottom-[-10%] left-[20%] w-96 h-96 bg-accent/20 rounded-full mix-blend-screen filter blur-[100px] animate-blob animation-delay-4000 z-0 pointer-events-none"></div>
+
+    <nav id="navbar" class="fixed w-full z-50 transition-all duration-300 bg-transparent py-4">
+        <div class="max-w-7xl mx-auto px-6 lg:px-8 flex items-center justify-between">
+            <a href="#" class="text-2xl font-heading font-bold text-white tracking-tighter">
+                ARMAN<span class="text-transparent bg-clip-text bg-gradient-to-r from-primary to-secondary">.</span>
+            </a>
+            
+            <div class="hidden md:flex space-x-8 items-center glass-nav px-8 py-3 rounded-full">
+                <a href="#about" class="text-sm font-medium hover:text-white transition-colors">About</a>
+                <a href="#experience" class="text-sm font-medium hover:text-white transition-colors">Experience</a>
+                <a href="#projects" class="text-sm font-medium hover:text-white transition-colors">Projects</a>
+                <a href="#dashboards" class="text-sm font-medium hover:text-white transition-colors">Dashboards</a>
+                <a href="#contact" class="text-sm font-medium hover:text-white transition-colors">Contact</a>
+            </div>
+
+            <div class="hidden md:flex items-center space-x-4">
+                <a href="https://www.linkedin.com/in/arman-mulla/" target="_blank" class="text-xl hover:text-white transition-colors"><i class="fa-brands fa-linkedin"></i></a>
+                <a href="#contact" class="px-5 py-2.5 rounded-full bg-white/10 hover:bg-white/20 border border-white/10 text-white font-medium text-sm transition-all backdrop-blur-md">Let's Talk</a>
+            </div>
+
+            <button id="mobile-menu-btn" class="md:hidden text-white focus:outline-none z-50">
+                <i class="fa-solid fa-bars text-2xl"></i>
+            </button>
+        </div>
+
+        <div id="mobile-menu" class="fixed inset-0 bg-darker/95 backdrop-blur-xl z-40 transform translate-x-full transition-transform duration-300 flex flex-col items-center justify-center space-y-8 text-xl">
+            <a href="#about" class="mobile-link text-white hover:text-primary">About</a>
+            <a href="#experience" class="mobile-link text-white hover:text-primary">Experience</a>
+            <a href="#projects" class="mobile-link text-white hover:text-primary">Projects</a>
+            <a href="#dashboards" class="mobile-link text-white hover:text-primary">Dashboards</a>
+            <a href="#contact" class="mobile-link text-white hover:text-primary">Contact</a>
+        </div>
+    </nav>
+
+    <section id="home" class="relative min-h-screen flex items-center justify-center pt-20 z-10 overflow-hidden">
+        <div class="max-w-7xl mx-auto px-6 lg:px-8 text-center">
+            <div data-aos="fade-down" class="inline-block mb-4 px-4 py-1.5 rounded-full border border-white/10 bg-white/5 backdrop-blur-md">
+                <span class="bg-gradient-to-r from-primary to-secondary bg-clip-text text-transparent font-semibold text-sm">Open to Opportunities</span>
+            </div>
+            
+            <h1 data-aos="fade-up" data-aos-delay="100" class="text-5xl md:text-7xl lg:text-8xl font-heading font-extrabold text-white tracking-tight mb-6 leading-tight">
+                Data Driven.<br>
+                <span class="text-transparent bg-clip-text bg-gradient-to-r from-primary via-secondary to-accent">Business Focused.</span>
+            </h1>
+            
+            <p data-aos="fade-up" data-aos-delay="200" class="max-w-2xl mx-auto text-lg md:text-xl text-slate-400 mb-10">
+                I am <span class="text-white font-semibold">Arman Mulla</span>, a Business Analyst translating complex datasets into actionable strategies across Telecom, FMCG, Ed-Tech, and Sports Analytics.
+            </p>
+            
+            <div data-aos="fade-up" data-aos-delay="300" class="flex flex-col sm:flex-row items-center justify-center gap-4">
+                <a href="#projects" class="w-full sm:w-auto px-8 py-4 rounded-full bg-white text-darker font-semibold hover:scale-105 transition-transform flex items-center justify-center gap-2">
+                    View Projects <i class="fa-solid fa-arrow-right"></i>
+                </a>
+                <a href="#" class="w-full sm:w-auto px-8 py-4 rounded-full glass-card hover:bg-white/10 border border-white/10 text-white font-semibold transition-all flex items-center justify-center gap-2">
+                    Download Resume <i class="fa-solid fa-download"></i>
+                </a>
+            </div>
+        </div>
+    </section>
+
+    <section class="py-10 border-y border-white/5 bg-white/[0.02] backdrop-blur-sm z-10 relative">
+        <div class="max-w-7xl mx-auto px-6 lg:px-8 flex flex-wrap justify-center sm:justify-between items-center gap-8 text-center">
+            <div data-aos="zoom-in" data-aos-delay="0">
+                <h3 class="text-4xl font-heading font-bold text-white mb-1"><span class="counter" data-target="80">0</span>%</h3>
+                <p class="text-sm text-slate-400 uppercase tracking-wider">Reporting Efficiency Inc.</p>
+            </div>
+            <div data-aos="zoom-in" data-aos-delay="100">
+                <h3 class="text-4xl font-heading font-bold text-white mb-1"><span class="counter" data-target="30">0</span>%</h3>
+                <p class="text-sm text-slate-400 uppercase tracking-wider">Churn Reduction</p>
+            </div>
+            <div data-aos="zoom-in" data-aos-delay="200">
+                <h3 class="text-4xl font-heading font-bold text-white mb-1"><span class="counter" data-target="75">0</span>%</h3>
+                <p class="text-sm text-slate-400 uppercase tracking-wider">Data Accuracy Boost</p>
+            </div>
+            <div data-aos="zoom-in" data-aos-delay="300">
+                <h3 class="text-4xl font-heading font-bold text-white mb-1"><span class="counter" data-target="5">0</span>+</h3>
+                <p class="text-sm text-slate-400 uppercase tracking-wider">Domains Explored</p>
+            </div>
+        </div>
+    </section>
+
+    <section id="experience" class="py-24 relative z-10">
+        <div class="max-w-5xl mx-auto px-6 lg:px-8">
+            <div class="text-center mb-16" data-aos="fade-up">
+                <h2 class="text-3xl md:text-5xl font-heading font-bold text-white mb-4">Professional <span class="text-transparent bg-clip-text bg-gradient-to-r from-primary to-secondary">Journey</span></h2>
+                <p class="text-slate-400">Bridging the gap between raw data and executive decision-making.</p>
+            </div>
+
+            <div class="space-y-8 relative before:absolute before:inset-0 before:ml-5 before:-translate-x-px md:before:mx-auto md:before:translate-x-0 before:h-full before:w-0.5 before:bg-gradient-to-b before:from-transparent before:via-white/20 before:to-transparent">
+                
+                <div class="relative flex items-center justify-between md:justify-normal md:odd:flex-row-reverse group is-active" data-aos="fade-up">
+                    <div class="flex items-center justify-center w-10 h-10 rounded-full border-4 border-dark bg-primary text-white shadow shrink-0 md:order-1 md:group-odd:-translate-x-1/2 md:group-even:translate-x-1/2 z-10">
+                        <i class="fa-solid fa-chart-line text-sm"></i>
+                    </div>
+                    <div class="w-[calc(100%-4rem)] md:w-[calc(50%-2.5rem)] glass-card p-6 rounded-2xl border border-white/10 hover:border-primary/50 transition-colors">
+                        <div class="flex flex-wrap justify-between items-center mb-2">
+                            <h3 class="font-bold text-xl text-white">Business Analyst</h3>
+                            <span class="text-xs font-medium px-2.5 py-1 bg-primary/20 text-primary rounded-full">Mar 2026 - Apr 2026</span>
+                        </div>
+                        <h4 class="text-secondary font-medium mb-4">ETG (EatAnytime)</h4>
+                        <ul class="text-sm text-slate-400 space-y-2 list-disc pl-4">
+                            <li>Built a semi-automated data pipeline using Python & Power Query.</li>
+                            <li>Streamlined DB operations, improving data accuracy by 75%.</li>
+                            <li>Generated actionable performance reports for sales and markdown trends.</li>
+                        </ul>
+                    </div>
+                </div>
+
+                <div class="relative flex items-center justify-between md:justify-normal md:odd:flex-row-reverse group is-active" data-aos="fade-up">
+                    <div class="flex items-center justify-center w-10 h-10 rounded-full border-4 border-dark bg-secondary text-white shadow shrink-0 md:order-1 md:group-odd:-translate-x-1/2 md:group-even:translate-x-1/2 z-10">
+                        <i class="fa-solid fa-server text-sm"></i>
+                    </div>
+                    <div class="w-[calc(100%-4rem)] md:w-[calc(50%-2.5rem)] glass-card p-6 rounded-2xl border border-white/10 hover:border-secondary/50 transition-colors">
+                        <div class="flex flex-wrap justify-between items-center mb-2">
+                            <h3 class="font-bold text-xl text-white">MIS Exec / Customer Success BA</h3>
+                            <span class="text-xs font-medium px-2.5 py-1 bg-secondary/20 text-secondary rounded-full">Apr 2025 - Mar 2026</span>
+                        </div>
+                        <h4 class="text-primary font-medium mb-4">Ideas to Impacts (Tata Communications)</h4>
+                        <ul class="text-sm text-slate-400 space-y-2 list-disc pl-4">
+                            <li>Designed end-to-end Power BI reporting solutions tracking KPIs.</li>
+                            <li>Automated ETL workflows for real-time executive dashboards.</li>
+                            <li>Performed anomaly detection contributing to a 30% reduction in churn.</li>
+                        </ul>
+                    </div>
+                </div>
+
+                <div class="relative flex items-center justify-between md:justify-normal md:odd:flex-row-reverse group is-active" data-aos="fade-up">
+                    <div class="flex items-center justify-center w-10 h-10 rounded-full border-4 border-dark bg-accent text-white shadow shrink-0 md:order-1 md:group-odd:-translate-x-1/2 md:group-even:translate-x-1/2 z-10">
+                        <i class="fa-solid fa-futbol text-sm"></i>
+                    </div>
+                    <div class="w-[calc(100%-4rem)] md:w-[calc(50%-2.5rem)] glass-card p-6 rounded-2xl border border-white/10 hover:border-accent/50 transition-colors">
+                        <div class="flex flex-wrap justify-between items-center mb-2">
+                            <h3 class="font-bold text-xl text-white">Sports Analyst</h3>
+                            <span class="text-xs font-medium px-2.5 py-1 bg-accent/20 text-accent rounded-full">Sep 2024 - Dec 2024</span>
+                        </div>
+                        <h4 class="text-accent font-medium mb-4">Intelldetect</h4>
+                        <ul class="text-sm text-slate-400 space-y-2 list-disc pl-4">
+                            <li>Structured and cleansed raw datasets, enhancing reliability by >50%.</li>
+                            <li>Analyzed match performance trends for data-driven initiatives.</li>
+                        </ul>
+                    </div>
+                </div>
+
+                 <div class="relative flex items-center justify-between md:justify-normal md:odd:flex-row-reverse group is-active" data-aos="fade-up">
+                    <div class="flex items-center justify-center w-10 h-10 rounded-full border-4 border-dark bg-blue-500 text-white shadow shrink-0 md:order-1 md:group-odd:-translate-x-1/2 md:group-even:translate-x-1/2 z-10">
+                        <i class="fa-solid fa-database text-sm"></i>
+                    </div>
+                    <div class="w-[calc(100%-4rem)] md:w-[calc(50%-2.5rem)] glass-card p-6 rounded-2xl border border-white/10 hover:border-blue-500/50 transition-colors">
+                        <div class="flex flex-wrap justify-between items-center mb-2">
+                            <h3 class="font-bold text-xl text-white">Data Researcher Intern</h3>
+                            <span class="text-xs font-medium px-2.5 py-1 bg-blue-500/20 text-blue-400 rounded-full">Apr 2024 - Aug 2024</span>
+                        </div>
+                        <h4 class="text-blue-400 font-medium mb-4">Collegedunia.com</h4>
+                        <ul class="text-sm text-slate-400 space-y-2 list-disc pl-4">
+                            <li>Executed data collection and verification with 90% accuracy.</li>
+                            <li>Guided a 3-person team to improve operational reporting efficiency.</li>
+                        </ul>
+                    </div>
+                </div>
+
+            </div>
+        </div>
+    </section>
+
+    <section id="skills" class="py-24 relative z-10 bg-white/[0.01]">
+        <div class="max-w-7xl mx-auto px-6 lg:px-8">
+            <div class="text-center mb-16" data-aos="fade-up">
+                <h2 class="text-3xl md:text-5xl font-heading font-bold text-white mb-4">The <span class="text-transparent bg-clip-text bg-gradient-to-r from-secondary to-accent">Toolkit</span></h2>
+                <p class="text-slate-400">Technical precision meets business acumen.</p>
+            </div>
+
+            <div class="grid grid-cols-1 md:grid-cols-2 gap-8">
+                <div class="glass-card p-8 rounded-3xl border border-white/10" data-aos="fade-right">
+                    <div class="w-12 h-12 rounded-full bg-primary/20 flex items-center justify-center text-primary mb-6 text-2xl">
+                        <i class="fa-solid fa-briefcase"></i>
+                    </div>
+                    <h3 class="text-2xl font-bold text-white mb-6">Business Analysis</h3>
+                    <div class="flex flex-wrap gap-3">
+                        <span class="px-4 py-2 rounded-full bg-white/5 border border-white/10 text-sm hover:border-primary transition-colors">Requirement Gathering</span>
+                        <span class="px-4 py-2 rounded-full bg-white/5 border border-white/10 text-sm hover:border-primary transition-colors">BRD & FRD Creation</span>
+                        <span class="px-4 py-2 rounded-full bg-white/5 border border-white/10 text-sm hover:border-primary transition-colors">Stakeholder Management</span>
+                        <span class="px-4 py-2 rounded-full bg-white/5 border border-white/10 text-sm hover:border-primary transition-colors">KPI Definition</span>
+                        <span class="px-4 py-2 rounded-full bg-white/5 border border-white/10 text-sm hover:border-primary transition-colors">Process Mapping & SOPs</span>
+                        <span class="px-4 py-2 rounded-full bg-white/5 border border-white/10 text-sm hover:border-primary transition-colors">SWOT Analysis</span>
+                        <span class="px-4 py-2 rounded-full bg-white/5 border border-white/10 text-sm hover:border-primary transition-colors">A/B Testing</span>
+                    </div>
+                </div>
+
+                <div class="glass-card p-8 rounded-3xl border border-white/10" data-aos="fade-left">
+                    <div class="w-12 h-12 rounded-full bg-secondary/20 flex items-center justify-center text-secondary mb-6 text-2xl">
+                        <i class="fa-solid fa-code"></i>
+                    </div>
+                    <h3 class="text-2xl font-bold text-white mb-6">Data & Analytics</h3>
+                    <div class="flex flex-wrap gap-3">
+                        <span class="px-4 py-2 rounded-full bg-white/5 border border-white/10 text-sm hover:border-secondary transition-colors">Power BI & DAX</span>
+                        <span class="px-4 py-2 rounded-full bg-white/5 border border-white/10 text-sm hover:border-secondary transition-colors">SQL (Joins, ETL)</span>
+                        <span class="px-4 py-2 rounded-full bg-white/5 border border-white/10 text-sm hover:border-secondary transition-colors">Python (PyODBC)</span>
+                        <span class="px-4 py-2 rounded-full bg-white/5 border border-white/10 text-sm hover:border-secondary transition-colors">Advanced Excel (VBA, Pivot)</span>
+                        <span class="px-4 py-2 rounded-full bg-white/5 border border-white/10 text-sm hover:border-secondary transition-colors">Power Query</span>
+                        <span class="px-4 py-2 rounded-full bg-white/5 border border-white/10 text-sm hover:border-secondary transition-colors">Tableau</span>
+                        <span class="px-4 py-2 rounded-full bg-white/5 border border-white/10 text-sm hover:border-secondary transition-colors">Relational Data Modelling</span>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <section id="projects" class="py-24 relative z-10">
+        <div class="max-w-7xl mx-auto px-6 lg:px-8">
+            <div class="text-center mb-16" data-aos="fade-up">
+                <h2 class="text-3xl md:text-5xl font-heading font-bold text-white mb-4">Featured <span class="text-transparent bg-clip-text bg-gradient-to-r from-primary to-accent">Projects</span></h2>
+                <p class="text-slate-400">Solving real-world business problems with data.</p>
+            </div>
+
+            <div class="grid grid-cols-1 lg:grid-cols-2 gap-8">
+                
+                <div class="glass-card rounded-3xl overflow-hidden border border-white/10 group" data-aos="fade-up">
+                    <div class="p-8">
+                        <div class="flex justify-between items-start mb-6">
+                            <div class="w-12 h-12 rounded-xl bg-gradient-to-br from-primary to-secondary flex items-center justify-center text-white text-xl">
+                                <i class="fa-solid fa-car-side"></i>
+                            </div>
+                            <span class="text-xs font-medium px-3 py-1 bg-white/10 rounded-full border border-white/10">Python / SQL</span>
+                        </div>
+                        <h3 class="text-2xl font-bold text-white mb-3">Urban Mobility & Fleet Yield Pipeline</h3>
+                        <p class="text-slate-400 text-sm mb-6">Engineered a Python-based ETL pipeline for NYC TLC Data.</p>
+                        
+                        <div class="space-y-4 text-sm">
+                            <div class="bg-white/5 p-4 rounded-xl border border-white/5">
+                                <span class="text-primary font-bold block mb-1">The Solution</span>
+                                Cleansed and bulk-loaded 250,000 rows into SQL Server in < 2.5 minutes using PyODBC to optimize latency.
+                            </div>
+                            <div class="bg-white/5 p-4 rounded-xl border border-white/5">
+                                <span class="text-secondary font-bold block mb-1">The Impact</span>
+                                Formulated programmatic business metrics (Revenue per Mile, Utilization Rate) to isolate high-profit corridors and supply-demand gaps.
+                            </div>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="glass-card rounded-3xl overflow-hidden border border-white/10 group" data-aos="fade-up" data-aos-delay="100">
+                    <div class="p-8">
+                        <div class="flex justify-between items-start mb-6">
+                            <div class="w-12 h-12 rounded-xl bg-gradient-to-br from-secondary to-accent flex items-center justify-center text-white text-xl">
+                                <i class="fa-solid fa-trophy"></i>
+                            </div>
+                            <span class="text-xs font-medium px-3 py-1 bg-white/10 rounded-full border border-white/10">Sports Analytics</span>
+                        </div>
+                        <h3 class="text-2xl font-bold text-white mb-3">Real Madrid 2023-24 Season Analysis</h3>
+                        <p class="text-slate-400 text-sm mb-6">Comprehensive data-driven seasonal trend analysis.</p>
+                        
+                        <div class="space-y-4 text-sm">
+                            <div class="bg-white/5 p-4 rounded-xl border border-white/5">
+                                <span class="text-secondary font-bold block mb-1">The Strategy</span>
+                                Mapped >3,600 individual touches and progressive carry distances. Conducted Goals vs. Expected Goals (xG) variance mapping.
+                            </div>
+                            <div class="bg-white/5 p-4 rounded-xl border border-white/5">
+                                <span class="text-accent font-bold block mb-1">The Insights</span>
+                                Identified Jude Bellingham overperforming xG by +9. Revealed post-international break defensive vulnerability patterns.
+                            </div>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="glass-card rounded-3xl overflow-hidden border border-white/10 group" data-aos="fade-up">
+                    <div class="p-8 h-full flex flex-col">
+                        <div class="flex justify-between items-start mb-6">
+                            <div class="w-12 h-12 rounded-xl bg-gradient-to-br from-blue-500 to-cyan-400 flex items-center justify-center text-white text-xl">
+                                <i class="fa-solid fa-chart-pie"></i>
+                            </div>
+                            <span class="text-xs font-medium px-3 py-1 bg-white/10 rounded-full border border-white/10">Business Strategy</span>
+                        </div>
+                        <h3 class="text-2xl font-bold text-white mb-3">Customer Sales & Financial Analysis</h3>
+                        <p class="text-slate-400 text-sm mb-6">Financial performance reviews and cost-control forecasting.</p>
+                        
+                        <div class="space-y-4 text-sm mt-auto">
+                            <div class="bg-white/5 p-4 rounded-xl border border-white/5">
+                                <span class="text-cyan-400 font-bold block mb-1">The Impact</span>
+                                Identified operational opportunities boosting profitability by up to 68%. Reduced sales and cost forecast deviations to under 1%.
+                            </div>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="glass-card rounded-3xl overflow-hidden border border-white/10 group" data-aos="fade-up" data-aos-delay="100">
+                    <div class="p-8 h-full flex flex-col relative overflow-hidden">
+                        <div class="absolute -right-10 -bottom-10 w-40 h-40 bg-green-500/20 blur-[50px] rounded-full z-0"></div>
+                        
+                        <div class="flex justify-between items-start mb-6 relative z-10">
+                            <div class="w-12 h-12 rounded-xl bg-gradient-to-br from-green-400 to-emerald-600 flex items-center justify-center text-white text-xl">
+                                <i class="fa-solid fa-globe"></i>
+                            </div>
+                            <span class="text-xs font-medium px-3 py-1 bg-white/10 rounded-full border border-white/10 flex items-center gap-2"><span class="w-2 h-2 rounded-full bg-green-400 animate-pulse"></span> Live App</span>
+                        </div>
+                        <h3 class="text-2xl font-bold text-white mb-3 relative z-10">FIFA World Cup Analysis</h3>
+                        <p class="text-slate-400 text-sm mb-6 relative z-10">Interactive web application built with Streamlit for deep diving into historical World Cup statistics and patterns.</p>
+                        
+                        <div class="mt-auto relative z-10 pt-6">
+                            <a href="https://fifaworldcupanalysis.streamlit.app/" target="_blank" class="inline-flex w-full items-center justify-center gap-2 px-6 py-3 rounded-xl bg-white/10 hover:bg-green-500/20 border border-white/10 hover:border-green-500/50 text-white font-medium transition-all">
+                                Launch Dashboard <i class="fa-solid fa-arrow-up-right-from-square"></i>
+                            </a>
+                        </div>
+                    </div>
+                </div>
+
+            </div>
+        </div>
+    </section>
+
+    <section id="dashboards" class="py-24 relative z-10 bg-darker">
+        <div class="max-w-7xl mx-auto px-6 lg:px-8">
+            <div class="flex flex-col md:flex-row md:items-end justify-between mb-12" data-aos="fade-up">
+                <div>
+                    <h2 class="text-3xl md:text-5xl font-heading font-bold text-white mb-4">Dashboard <span class="text-transparent bg-clip-text bg-gradient-to-r from-blue-400 to-primary">Gallery</span></h2>
+                    <p class="text-slate-400">Visualizing complex data into intuitive executive summaries.</p>
+                </div>
+            </div>
+
+            <div class="grid grid-cols-1 md:grid-cols-2 gap-6">
+                <div class="group relative rounded-2xl overflow-hidden border border-white/10 glass-card aspect-video cursor-pointer" data-aos="fade-up">
+                    <img src="Paralympics.png" alt="Paralympics Dashboard" class="w-full h-full object-cover opacity-80 group-hover:opacity-100 group-hover:scale-105 transition-all duration-500" onerror="this.src='https://images.unsplash.com/photo-1551288049-bebda4e38f71?q=80&w=2000&auto=format&fit=crop';">
+                    <div class="absolute inset-0 bg-gradient-to-t from-dark via-dark/20 to-transparent opacity-80"></div>
+                    <div class="absolute bottom-0 left-0 p-6 translate-y-4 group-hover:translate-y-0 transition-transform">
+                        <h4 class="text-xl font-bold text-white mb-1">Paralympics Analytics</h4>
+                        <p class="text-sm text-slate-300">Power BI / Data Visualization</p>
+                    </div>
+                </div>
+
+                <div class="group relative rounded-2xl overflow-hidden border border-white/10 glass-card aspect-video cursor-pointer" data-aos="fade-up" data-aos-delay="100">
+                    <img src="Uber_Mobility.png" alt="Uber Mobility Supply Chain" class="w-full h-full object-cover opacity-80 group-hover:opacity-100 group-hover:scale-105 transition-all duration-500" onerror="this.src='https://images.unsplash.com/photo-1460925895917-afdab827c52f?q=80&w=2000&auto=format&fit=crop';">
+                    <div class="absolute inset-0 bg-gradient-to-t from-dark via-dark/20 to-transparent opacity-80"></div>
+                    <div class="absolute bottom-0 left-0 p-6 translate-y-4 group-hover:translate-y-0 transition-transform">
+                        <h4 class="text-xl font-bold text-white mb-1">Uber Fleet Yield & Corridors</h4>
+                        <p class="text-sm text-slate-300">Operations / Geospatial Tracking</p>
+                    </div>
+                </div>
+
+                <div class="group relative rounded-2xl overflow-hidden border border-white/10 glass-card aspect-video cursor-pointer" data-aos="fade-up">
+                    <img src="HR_Analysis.png" alt="HR Analysis Dashboard" class="w-full h-full object-cover opacity-80 group-hover:opacity-100 group-hover:scale-105 transition-all duration-500" onerror="this.src='https://images.unsplash.com/photo-1543286386-2e659306cd6c?q=80&w=2000&auto=format&fit=crop';">
+                    <div class="absolute inset-0 bg-gradient-to-t from-dark via-dark/20 to-transparent opacity-80"></div>
+                    <div class="absolute bottom-0 left-0 p-6 translate-y-4 group-hover:translate-y-0 transition-transform">
+                        <h4 class="text-xl font-bold text-white mb-1">HR Attrition & Performance</h4>
+                        <p class="text-sm text-slate-300">Executive Dashboard / KPI Tracking</p>
+                    </div>
+                </div>
+
+                <div class="group relative rounded-2xl overflow-hidden border border-white/10 glass-card aspect-video cursor-pointer" data-aos="fade-up" data-aos-delay="100">
+                    <img src="RM_Analysis.png" alt="Real Madrid Analysis" class="w-full h-full object-cover opacity-80 group-hover:opacity-100 group-hover:scale-105 transition-all duration-500" onerror="this.src='https://images.unsplash.com/photo-1508344928928-7165b67de128?q=80&w=2000&auto=format&fit=crop';">
+                    <div class="absolute inset-0 bg-gradient-to-t from-dark via-dark/20 to-transparent opacity-80"></div>
+                    <div class="absolute bottom-0 left-0 p-6 translate-y-4 group-hover:translate-y-0 transition-transform">
+                        <h4 class="text-xl font-bold text-white mb-1">RM 23-24 Season Tactics</h4>
+                        <p class="text-sm text-slate-300">Sports Analytics / Presentation Deck</p>
+                    </div>
+                </div>
+            </div>
+            <div class="mt-8 text-center text-sm text-slate-500">
+                <p><i class="fa-solid fa-circle-info mr-2"></i>Includes metrics on Telecom TR Hygiene, CPE Recovery, and automated CSAT pipelines.</p>
+            </div>
+        </div>
+    </section>
+
+    <section id="contact" class="py-24 relative z-10">
+        <div class="max-w-4xl mx-auto px-6 lg:px-8 text-center">
+            <div data-aos="zoom-in" class="inline-block mb-6 p-4 rounded-full bg-white/5 border border-white/10 text-4xl text-primary">
+                <i class="fa-regular fa-envelope"></i>
+            </div>
+            <h2 data-aos="fade-up" class="text-4xl md:text-6xl font-heading font-bold text-white mb-6">Let's build something <span class="text-transparent bg-clip-text bg-gradient-to-r from-primary to-accent">impactful.</span></h2>
+            <p data-aos="fade-up" data-aos-delay="100" class="text-xl text-slate-400 mb-10">
+                Whether it's optimizing pipelines, defining KPIs, or building executive dashboards—I'm ready to bring data clarity to your team.
+            </p>
+            
+            <div data-aos="fade-up" data-aos-delay="200" class="flex flex-col sm:flex-row justify-center items-center gap-6">
+                <a href="mailto:armaanmulla7781@gmail.com" class="w-full sm:w-auto px-8 py-4 rounded-full bg-gradient-to-r from-primary to-secondary text-white font-bold hover:shadow-[0_0_30px_rgba(99,102,241,0.5)] transition-shadow flex items-center justify-center gap-3 text-lg">
+                    armaanmulla7781@gmail.com
+                </a>
+                <a href="https://www.linkedin.com/in/arman-mulla/" target="_blank" class="w-full sm:w-auto px-8 py-4 rounded-full glass-card hover:bg-white/10 border border-white/10 text-white font-bold transition-all flex items-center justify-center gap-3 text-lg">
+                    <i class="fa-brands fa-linkedin text-xl text-[#0A66C2]"></i> Connect on LinkedIn
+                </a>
+            </div>
+        </div>
+    </section>
+
+    <footer class="border-t border-white/10 py-8 relative z-10 bg-darker">
+        <div class="max-w-7xl mx-auto px-6 lg:px-8 flex flex-col md:flex-row justify-between items-center gap-4">
+            <p class="text-slate-500 text-sm">© 2026 Arman Mulla. All rights reserved.</p>
+            <div class="flex space-x-6 text-slate-400">
+                <a href="#" class="hover:text-white transition-colors"><i class="fa-brands fa-github text-xl"></i></a>
+                <a href="https://www.linkedin.com/in/arman-mulla/" class="hover:text-white transition-colors"><i class="fa-brands fa-linkedin text-xl"></i></a>
+            </div>
+        </div>
+    </footer>
+
+    <script src="https://unpkg.com/aos@2.3.1/dist/aos.js"></script>
+    <script src="script.js"></script>
+</body>
+</html>
