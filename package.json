@@ -1,0 +1,27 @@
+{
+  "name": "arman-mulla-portfolio",
+  "version": "1.0.0",
+  "description": "Portfolio website of Arman Mulla - Business Analyst specializing in Data Analytics, KPI Tracking, and Process Improvement",
+  "main": "index.html",
+  "scripts": {
+    "test": "echo \"No tests specified\" && exit 0"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/Armaan7781/Portfolio-Website.git"
+  },
+  "keywords": [
+    "portfolio",
+    "business-analyst",
+    "data-analytics"
+  ],
+  "author": "Arman Mulla",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/Armaan7781/Portfolio-Website/issues"
+  },
+  "homepage": "https://github.com/Armaan7781/Portfolio-Website#readme",
+  "dependencies": {
+    "@vercel/analytics": "^2.0.1"
+  }
+}
